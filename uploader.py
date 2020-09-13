@@ -38,7 +38,7 @@ class Uploader:
     def _send_notification(self, sat_in_utc, next_pass):
         # Send notification to slack
 
-        pass_hour = sat_in_utc.astimezone(datetime.now().tzinfo).strftime("%H:%m")
+        pass_hour = sat_in_utc.astimezone(datetime.now().tzinfo).strftime("%H:%M")
         pass_elevation = round(next_pass.max_elevation_deg, 2)
 
         message = Template(self.notification).substitute(pass_hour=pass_hour, pass_elevation=pass_elevation)

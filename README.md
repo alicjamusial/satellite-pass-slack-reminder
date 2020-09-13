@@ -1,4 +1,4 @@
-# satellite pass slack uploader 
+# satellite pass slack reminder 
 
 Small python script to upload information about a passing satellite to Slack via [incoming webhooks](https://api.slack.com/messaging/webhooks) ~10 minutes before the pass.
  
